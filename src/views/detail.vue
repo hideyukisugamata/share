@@ -34,6 +34,8 @@ import SideNavi from "../components/SideNavi";
 import Message from "../components/Message";
 
 export default{
+  props:["id"],
+  
   components:{
     SideNavi,
     Message,
