@@ -6,9 +6,6 @@
     <div class="right flex">
       <p @click="$router.push('/signup')">新規登録</p>
       <p @click="$router.push('/')">ログイン</p>
-      <p @click="$router.push('/profile')">プロフィール</p>
-      <p @click="$router.push('/home')">シェア一覧</p>
-      <p @click="$router.push('/detail/:share_id')">シェア詳細</p>
     </div>
   </div>
 </template>
