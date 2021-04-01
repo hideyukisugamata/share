@@ -91,11 +91,11 @@ export default{
    },
    async getShares(){
      let data=[];
-     const shares = await axios.get("https://ancient-ravine-27130.herokuapp.com/api/shares/");
+     const shares = await axios.get("https://ancient-ravine-27130.herokuapp.com/api/shares");
      for(let i = 0;i< shares.data.data.length;i++){
        await axios
        .get(
-         "https://ancient-ravine-27130.herokuapp.com/api/shares"+
+         "https://ancient-ravine-27130.herokuapp.com/api/shares/"+
          shares.data.data[i].id
        )
        .then((response)=>{

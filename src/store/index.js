@@ -41,7 +41,7 @@ export default new Vuex.Store({
           params: {
             email: email,
           },
-        },
+        }
       );
       commit("auth", responseLogin.data.auth);
       commit("user", responseUser.data.data[0]);
