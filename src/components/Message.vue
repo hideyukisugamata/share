@@ -16,7 +16,7 @@
           class="icon detail" 
           src="../assets/detail.png" 
           @click="$router.push({
-            path:'detail/' + value.item.id,
+            path:'/detail/' + value.item.id,
             params:{id:value.item.id},
           })"
           alt=""
@@ -48,7 +48,7 @@ export default{
        this.shares[index].like.forEach((element)=>{
          if(element.user_id == this.$store.state.user.id){
            axios({
-             methods:"delete",
+             method:"delete",
              url:"https://ancient-ravine-27130.herokuapp.com/api/like",
              data:{
                share_id:this.shares[index].item.id,
