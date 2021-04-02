@@ -95,8 +95,8 @@ export default{
      for(let i = 0;i< shares.data.data.length;i++){
        await axios
        .get(
-         "https://ancient-ravine-27130.herokuapp.com/api/shares/"+
-         shares.data.data[i].id
+         "https://ancient-ravine-27130.herokuapp.com/api/shares/" +
+              shares.data.data[i].id
        )
        .then((response)=>{
          if(this.$route.name == "profile"){
@@ -123,7 +123,7 @@ export default{
     if(this.$route.name === "detail"){
       this.profile = false;
     }
-    this.getshares();
+    this.getShares();
   },
 };
 </script>
@@ -156,4 +156,5 @@ export default{
   margin-left:10px;
   margin-right:10px;
 }
+
 </style>
