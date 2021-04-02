@@ -96,7 +96,7 @@ export default{
        await axios
        .get(
          "https://ancient-ravine-27130.herokuapp.com/api/shares/" +
-              shares.data.data[i].id
+              44
        )
        .then((response)=>{
          if(this.$route.name == "profile"){
